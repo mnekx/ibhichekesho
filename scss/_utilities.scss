@@ -64,3 +64,46 @@
     background-color: darken($color: $dark-color, $amount: 8);
   }
 }
+
+.thumbnail {
+  margin-top: 10px;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $main-color;
+    transform: scale(2) translateX(0) translateY(0) rotate(28deg);
+    display: block;
+    opacity: 0.8;
+    transition: 3s cubic-bezier(0.2, 1, 0.3, 1);
+  }
+
+  &:hover:before {
+    transform: scale(2) translateX(-75%) translateY(-75%) rotate(28deg);
+  }
+
+  hgroup {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    color: white;
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s ease;
+  }
+
+  &:hover hgroup {
+    transform: translatey(-100%);
+    opacity: 0;
+  }
+}
