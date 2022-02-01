@@ -1,0 +1,66 @@
+.container {
+  max-width: $website-width;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+
+.baga-icon-container {
+  height: 20px;
+
+  display: flex;
+  position: relative;
+
+  .baga-icon {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    div {
+      height: 10%;
+      width: 2rem;
+      background-color: $dark-color;
+    }
+  }
+
+  input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+
+  .card {
+    display: flex;
+
+    p {
+      width: 40%;
+    }
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px;
+  color: $light-color;
+  background-color: $dark-color;
+  text-decoration: none;
+  border-radius: 2px;
+  width: auto;
+
+  &-primary {
+    background-color: $main-color;
+  }
+
+  &:hover {
+    background-color: darken($color: $dark-color, $amount: 8);
+  }
+}
