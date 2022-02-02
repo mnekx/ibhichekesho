@@ -127,6 +127,9 @@ a {
 
 #header-home {
   background-image: url("../images/headline.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   z-index: 2; }
 
@@ -153,6 +156,9 @@ a {
       font-size: 38px;
       font-weight: 900;
       text-transform: uppercase; }
+      #header-content h1 span#header-content-span {
+        text-transform: none;
+        font-family: "Lato", sans-serif; }
   #header-content hgroup {
     margin-bottom: 10px; }
     #header-content hgroup h2 {
@@ -183,8 +189,7 @@ a {
   #main-nav #logo {
     display: none;
     justify-content: center;
-    align-items: center;
-    border: 1px solid blue; }
+    align-items: center; }
     #main-nav #logo img {
       height: 70px; }
   #main-nav .nav-menu {
@@ -205,7 +210,8 @@ a {
       display: inline-block;
       width: 100%;
       height: 30px;
-      font-size: 2rem; }
+      font-size: 2rem;
+      color: #272a31; }
 
 .main-section {
   background-color: #272a31;
@@ -309,3 +315,96 @@ footer {
     margin: 10px auto; }
   #about-main .main-section .container p {
     margin-bottom: 20px; }
+
+@media (min-width: 768px) {
+  #main-nav {
+    flex-wrap: nowrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: #f3f3f3;
+    box-shadow: 0.5px 0.5px 5px #272a31; }
+    #main-nav div.baga-icon-container {
+      display: none; }
+    #main-nav #logo {
+      display: flex; }
+      #main-nav #logo a {
+        text-decoration: none;
+        outline: none;
+        border: none; }
+    #main-nav .nav-menu {
+      position: static;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      flex: none;
+      background: none;
+      background-color: transparent;
+      justify-content: flex-end;
+      overflow-x: hidden; }
+      #main-nav .nav-menu a {
+        display: inline-block;
+        height: 100%;
+        font-size: 1rem;
+        padding: 2rem 1.5rem 1.5rem;
+        transition: color 0.1s ease; }
+        #main-nav .nav-menu a:hover {
+          color: #ec5242; }
+  #header-content {
+    max-width: 768px;
+    margin: 0 auto 0 auto;
+    padding-top: 6.5rem;
+    padding-bottom: 6rem; }
+    #header-content h1 span#header-content-span1,
+    #header-content h1 span#header-content-span2,
+    #header-content h1 span#header-content-span3 {
+      display: inline-block; }
+    #header-content p {
+      line-height: 1.5rem; }
+  #header-about #header-content h1,
+  #header-about #header-content p {
+    text-align: center; }
+  #schedule {
+    padding: 2.5rem 1rem; }
+    #schedule .container {
+      max-width: 1128px; }
+      #schedule .container .cards {
+        flex-direction: row;
+        margin-bottom: 2rem; }
+        #schedule .container .cards .card {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-right: 0.2rem;
+          border: 1px solid transparent; }
+          #schedule .container .cards .card:hover {
+            border: 1px solid #f3f3f3;
+            cursor: default; }
+          #schedule .container .cards .card p {
+            text-align: center;
+            width: 100%;
+            margin: 1.2rem 0; }
+          #schedule .container .cards .card h3 {
+            width: auto;
+            margin-top: 1.2rem; }
+          #schedule .container .cards .card i {
+            margin-top: 0.8rem; }
+      #schedule .container h2 {
+        margin-bottom: 1.2rem; }
+  #comedians {
+    padding-bottom: 2.5rem; }
+    #comedians .container .cards {
+      flex-direction: row;
+      flex-wrap: wrap; }
+      #comedians .container .cards .card {
+        flex-direction: row;
+        width: 50%; }
+  .thumbnails-container {
+    display: flex;
+    justify-content: space-between; }
+    .thumbnails-container .thumbnail {
+      margin-right: 1rem; } }
