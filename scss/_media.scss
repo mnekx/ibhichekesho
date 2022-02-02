@@ -10,6 +10,7 @@
     background-color: $almost-white;
     box-shadow: 0.5px 0.5px 5px $dark-color;
     z-index: 999;
+
     div.baga-icon-container {
       display: none;
     }
@@ -21,6 +22,7 @@
 
     #logo {
       display: flex;
+
       a {
         text-decoration: none;
         outline: none;
@@ -41,15 +43,19 @@
       overflow-x: hidden;
       flex-direction: row;
 
-      a {
-        display: inline-block;
-        height: 100%;
-        font-size: 1rem;
-        padding: 2rem 1.5rem 1.5rem;
-        transition: color 0.1s ease;
+      li {
+        margin: 0;
 
-        &:hover {
-          color: $main-color;
+        & > a {
+          display: inline-block;
+          height: 100%;
+          font-size: 1rem;
+          padding: 2rem 1.5rem 1.5rem;
+          transition: color 0.1s ease;
+
+          &:hover {
+            color: $main-color;
+          }
         }
       }
     }
@@ -62,6 +68,7 @@
       margin: 0 auto 0 auto;
       padding-top: 6.5rem;
       padding-bottom: 6rem;
+
       h1 {
         // text-align: center;
         span#header-content-span1,
@@ -90,8 +97,10 @@
   //   Schedule for index.html
   #schedule {
     padding: 2.5rem 1rem;
+
     .container {
       max-width: 1128px;
+
       .cards {
         flex-direction: row;
         margin-bottom: 2rem;
@@ -103,12 +112,13 @@
           align-items: center;
           margin-right: 0.2rem;
           border: 1px solid transparent;
+
           &:hover {
             border: 1px solid $almost-white;
             cursor: default;
           }
 
-          p {
+          & > p {
             text-align: center;
             width: 100%;
             margin: 1.2rem 0;
@@ -133,6 +143,7 @@
 
   #comedians {
     padding-bottom: 2.5rem;
+
     .container {
       .cards {
         flex-direction: row;

@@ -57,7 +57,9 @@
 .cards {
   display: flex;
   flex-direction: column;
-  margin: 10px 0; }
+  margin: 10px 0;
+  height: auto;
+  transition: height; }
   .cards .card {
     display: flex; }
     .cards .card p {
@@ -388,14 +390,16 @@ footer {
       justify-content: flex-end;
       overflow-x: hidden;
       flex-direction: row; }
-      #main-nav .nav-menu a {
-        display: inline-block;
-        height: 100%;
-        font-size: 1rem;
-        padding: 2rem 1.5rem 1.5rem;
-        transition: color 0.1s ease; }
-        #main-nav .nav-menu a:hover {
-          color: #ec5242; }
+      #main-nav .nav-menu li {
+        margin: 0; }
+        #main-nav .nav-menu li > a {
+          display: inline-block;
+          height: 100%;
+          font-size: 1rem;
+          padding: 2rem 1.5rem 1.5rem;
+          transition: color 0.1s ease; }
+          #main-nav .nav-menu li > a:hover {
+            color: #ec5242; }
   #header-content {
     max-width: 768px;
     margin: 0 auto 0 auto;
@@ -427,7 +431,7 @@ footer {
           #schedule .container .cards .card:hover {
             border: 1px solid #f3f3f3;
             cursor: default; }
-          #schedule .container .cards .card p {
+          #schedule .container .cards .card > p {
             text-align: center;
             width: 100%;
             margin: 1.2rem 0; }

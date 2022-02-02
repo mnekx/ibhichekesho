@@ -80,7 +80,7 @@
   flex-direction: column;
   margin: 10px 0;
   height: auto;
-  transition: height 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: height;
 
   .card {
     display: flex;

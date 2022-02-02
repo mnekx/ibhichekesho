@@ -51,6 +51,7 @@ a {
       margin: 5px 0;
       color: $main-color;
       font-family: "COCOGOOSE", sans-serif;
+
       span {
         display: block;
         font-size: 38px;
@@ -66,9 +67,11 @@ a {
 
     hgroup {
       margin-bottom: 10px;
+
       h2 {
         font-weight: 900;
       }
+
       h3 {
         font-weight: lighter;
       }
@@ -83,6 +86,7 @@ a {
 
   &-about {
     background-color: $almost-white;
+
     p {
       border: 1px solid $light-color;
       background-color: white;
@@ -152,11 +156,13 @@ a {
 .main-section {
   background-color: $dark-color;
   color: $light-color;
+
   .container {
     padding: 20px 0.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+
     h2 {
       margin-bottom: 10px;
       text-align: center;
@@ -170,6 +176,7 @@ a {
         text-align: center;
       }
     }
+
     .cards {
       .card {
         align-items: center;
@@ -177,15 +184,18 @@ a {
         padding: 10px;
         margin-bottom: 5px;
         border-radius: 2px;
+
         i {
           // margin: 0 10px;
           width: 10%;
         }
+
         h3 {
           // margin: 0 20px;
           width: 25%;
           color: $main-color;
         }
+
         p {
           width: 65%;
         }
@@ -196,12 +206,14 @@ a {
   &:nth-of-type(2) {
     background-color: white;
     color: $dark-color;
+
     .container {
       padding: 0.5rem;
 
       h2 {
         margin-top: 50px;
       }
+
       .cards {
         .card {
           background-color: white;
@@ -212,6 +224,7 @@ a {
           color: $dark-color;
           height: 200px;
           margin-bottom: 20px;
+
           img {
             width: 15%;
             height: 75%;
@@ -229,6 +242,7 @@ a {
             margin: 0 0 15px 0;
             color: $main-color;
             font-style: italic;
+
             span {
               margin-top: 10px;
               display: block;
@@ -265,6 +279,7 @@ footer {
     &:hover {
       background-color: white;
       color: $dark-color;
+
       i {
         color: $dark-color;
       }
@@ -276,6 +291,7 @@ footer {
       h2 {
         margin-top: 1.8rem;
       }
+
       div {
         display: flex;
         justify-content: center;
@@ -315,10 +331,12 @@ footer {
     background-color: white;
     color: $dark-color;
     text-align: center;
+
     .container {
       h2 {
         text-align: center;
       }
+
       span {
         display: block;
         margin: 10px auto;
