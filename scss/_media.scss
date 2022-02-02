@@ -13,6 +13,11 @@
       display: none;
     }
 
+    .container {
+      justify-content: space-between;
+      width: 960px;
+    }
+
     #logo {
       display: flex;
       a {

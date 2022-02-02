@@ -186,6 +186,10 @@ a {
   flex-wrap: wrap;
   align-items: center;
   position: relative; }
+  #main-nav .container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; }
   #main-nav #logo {
     display: none;
     justify-content: center;
@@ -328,6 +332,9 @@ footer {
     box-shadow: 0.5px 0.5px 5px #272a31; }
     #main-nav div.baga-icon-container {
       display: none; }
+    #main-nav .container {
+      justify-content: space-between;
+      width: 960px; }
     #main-nav #logo {
       display: flex; }
       #main-nav #logo a {
@@ -411,4 +418,6 @@ footer {
   #about-main {
     margin-bottom: 3rem; }
     #about-main .main-section .container h2 {
-      margin-bottom: 30px; } }
+      margin-bottom: 30px; }
+    #about-main .main-section .container p {
+      margin-bottom: 45px; } }

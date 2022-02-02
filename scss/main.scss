@@ -102,6 +102,12 @@ a {
   align-items: center;
   position: relative;
 
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
   #logo {
     display: none;
     justify-content: center;
