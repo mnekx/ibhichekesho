@@ -7,7 +7,8 @@
   height: 20px;
   display: flex;
   position: relative;
-  margin: 1.5rem 0; }
+  margin: 1.5rem 0;
+  z-index: 999; }
   .baga-icon-container .baga-icon {
     height: 100%;
     display: flex;
@@ -198,8 +199,7 @@ a {
   height: 20vh;
   justify-content: space-between;
   flex-wrap: wrap;
-  align-items: center;
-  position: relative; }
+  align-items: center; }
   #main-nav .container {
     width: 100%;
     display: flex;
@@ -213,17 +213,20 @@ a {
   #main-nav .nav-menu {
     flex: 1 1 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 100vh;
     z-index: 3;
     background: rgba(243, 243, 243, 0.89);
     overflow: hidden;
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
     width: 0;
     transition: width 0.5s cubic-bezier(0.165, 0.84, 0.44, 1); }
+    #main-nav .nav-menu li {
+      margin: 1.5rem 0; }
     #main-nav .nav-menu a {
       display: inline-block;
       width: 100%;
@@ -366,7 +369,7 @@ footer {
       display: none; }
     #main-nav .container {
       justify-content: space-between;
-      width: 960px; }
+      width: 1120px; }
     #main-nav #logo {
       display: flex; }
       #main-nav #logo a {
@@ -383,7 +386,8 @@ footer {
       background: none;
       background-color: transparent;
       justify-content: flex-end;
-      overflow-x: hidden; }
+      overflow-x: hidden;
+      flex-direction: row; }
       #main-nav .nav-menu a {
         display: inline-block;
         height: 100%;

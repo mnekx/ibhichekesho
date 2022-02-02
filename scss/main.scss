@@ -101,7 +101,7 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  position: relative;
+  // position: relative;
 
   .container {
     width: 100%;
@@ -122,17 +122,22 @@ a {
   .nav-menu {
     flex: 1 1 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 100vh;
     z-index: 3;
     background: rgba($almost-white, 0.89);
     overflow: hidden;
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
     width: 0;
     transition: width 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    li {
+      margin: 1.5rem 0;
+    }
 
     a {
       display: inline-block;

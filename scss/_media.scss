@@ -16,7 +16,7 @@
 
     .container {
       justify-content: space-between;
-      width: 960px;
+      width: 1120px;
     }
 
     #logo {
@@ -39,6 +39,7 @@
       background-color: transparent;
       justify-content: flex-end;
       overflow-x: hidden;
+      flex-direction: row;
 
       a {
         display: inline-block;
