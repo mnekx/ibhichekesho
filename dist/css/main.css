@@ -407,4 +407,8 @@ footer {
     display: flex;
     justify-content: space-between; }
     .thumbnails-container .thumbnail {
-      margin-right: 1rem; } }
+      margin-right: 1rem; }
+  #about-main {
+    margin-bottom: 3rem; }
+    #about-main .main-section .container h2 {
+      margin-bottom: 30px; } }

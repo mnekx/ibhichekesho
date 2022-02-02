@@ -148,4 +148,21 @@
       margin-right: 1rem;
     }
   }
+
+  // About section
+  #about-main {
+    margin-bottom: 3rem;
+
+    .main-section {
+      .container {
+        h2 {
+          margin-bottom: 30px;
+        }
+
+        p {
+          margin-bottom: 45px;
+        }
+      }
+    }
+  }
 }
