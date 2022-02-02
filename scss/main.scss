@@ -45,6 +45,7 @@ a {
   &-content {
     display: flex;
     flex-direction: column;
+    padding-bottom: 5.5rem;
 
     h1 {
       margin: 5px 0;
@@ -243,6 +244,28 @@ a {
 
 footer {
   width: 100%;
+  justify-content: center;
+  text-align: center;
+
+  .btn {
+    width: 90%;
+    text-transform: uppercase;
+    border: 1px solid $dark-color;
+    margin-bottom: 1rem;
+
+    i {
+      color: $main-color;
+    }
+
+    &:hover {
+      background-color: white;
+      color: $dark-color;
+      i {
+        color: $dark-color;
+      }
+    }
+  }
+
   .main-section {
     .container {
       h2 {

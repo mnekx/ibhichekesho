@@ -101,6 +101,17 @@
     background-color: $main-color;
   }
 
+  &-secondary {
+    background-color: white;
+    border: $almost-white;
+    color: $dark-color;
+
+    &:hover {
+      background-color: $light-color;
+      color: $almost-white;
+    }
+  }
+
   &:hover {
     background-color: darken($color: $dark-color, $amount: 8);
   }
@@ -153,4 +164,14 @@
 .show-flex-nav {
   // display: flex !important;
   width: 100% !important;
+}
+
+// Show block elements
+.show-inline-block {
+  display: inline-block !important;
+}
+
+// Hide with display None
+.hide-display {
+  display: none !important;
 }

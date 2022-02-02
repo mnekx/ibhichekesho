@@ -72,6 +72,13 @@
   width: auto; }
   .btn-primary {
     background-color: #ec5242; }
+  .btn-secondary {
+    background-color: white;
+    border: #f3f3f3;
+    color: #272a31; }
+    .btn-secondary:hover {
+      background-color: #d3d3d3;
+      color: #f3f3f3; }
   .btn:hover {
     background-color: #15171a; }
 
@@ -110,6 +117,12 @@
 .show-flex-nav {
   width: 100% !important; }
 
+.show-inline-block {
+  display: inline-block !important; }
+
+.hide-display {
+  display: none !important; }
+
 * {
   margin: 0;
   padding: 0;
@@ -146,7 +159,8 @@ a {
 
 #header-content {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding-bottom: 5.5rem; }
   #header-content h1 {
     margin: 5px 0;
     color: #ec5242;
@@ -287,7 +301,21 @@ a {
           width: 100%; }
 
 footer {
-  width: 100%; }
+  width: 100%;
+  justify-content: center;
+  text-align: center; }
+  footer .btn {
+    width: 90%;
+    text-transform: uppercase;
+    border: 1px solid #272a31;
+    margin-bottom: 1rem; }
+    footer .btn i {
+      color: #ec5242; }
+    footer .btn:hover {
+      background-color: white;
+      color: #272a31; }
+      footer .btn:hover i {
+        color: #272a31; }
   footer .main-section .container h2 {
     margin-top: 1.8rem; }
   footer .main-section .container div {
@@ -424,4 +452,6 @@ footer {
     #about-main .main-section .container h2 {
       margin-bottom: 30px; }
     #about-main .main-section .container p {
-      margin-bottom: 45px; } }
+      margin-bottom: 45px; }
+  footer .btn {
+    display: none; } }
