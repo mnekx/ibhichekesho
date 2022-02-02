@@ -281,7 +281,8 @@ footer {
   #header-content hgroup {
     margin-bottom: 10px; }
     #header-content hgroup h2 {
-      font-weight: 900; }
+      font-weight: 900;
+      margin-bottom: 0.9rem; }
     #header-content hgroup h3 {
       font-weight: lighter; }
   #header-content p {

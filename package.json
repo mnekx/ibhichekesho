@@ -4,7 +4,7 @@
   "description": "A site for TZ Comedic Talents Show!",
   "main": "index.html",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o docs/css/ --recursive"
   },
   "keywords": [
     "ibhichekesho"

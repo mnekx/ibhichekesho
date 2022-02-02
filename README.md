@@ -13,6 +13,7 @@
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+
 - sass
 
 ### Setup
@@ -26,6 +27,7 @@ To get a local copy up and running follow these simple example steps.
 ### Run tests
 
 ### Deployment
+
 [gitpages](https://mnekx.github.io/ibhichekesho/)
 
 ## Authors
@@ -36,11 +38,12 @@ To get a local copy up and running follow these simple example steps.
 - [LinkedIn](www.linkedin.com/in/mnemba-chambuya)
 
 👤 **Cindy Shin**
+
 - LinkedIn: [LinkedIn](linkedin.com/in/adagio07)
 
-## Screenshot ![see](./images/screenshot.PNG?raw=true "Title")
+## Screenshot ![see](docs/images/screenshot.png)
 
-Screenshot: 
+Screenshot:
 
 ## 🤝 Contributing
 
