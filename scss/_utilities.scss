@@ -177,3 +177,112 @@
 .hide-display {
   display: none !important;
 }
+
+// main section class
+.main-section {
+  background-color: $dark-color;
+  color: $light-color;
+
+  .container {
+    padding: 20px 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      margin-bottom: 10px;
+      text-align: center;
+
+      span {
+        display: inline-block;
+        width: 28%;
+        height: 3px;
+        background-color: $main-color;
+        align-self: center;
+        text-align: center;
+      }
+    }
+
+    .cards {
+      .card {
+        align-items: center;
+        background-color: lighten($color: $dark-color, $amount: 9);
+        padding: 10px;
+        margin-bottom: 5px;
+        border-radius: 2px;
+
+        i {
+          // margin: 0 10px;
+          width: 10%;
+        }
+
+        h3 {
+          // margin: 0 20px;
+          width: 25%;
+          color: $main-color;
+        }
+
+        p {
+          width: 65%;
+        }
+      }
+    }
+  }
+
+  &:nth-of-type(2) {
+    background-color: white;
+    color: $dark-color;
+
+    .container {
+      padding: 0.5rem;
+
+      h2 {
+        margin-top: 50px;
+      }
+
+      .cards {
+        .card {
+          background-color: white;
+          background-image: url("../images/draft.jpg");
+          background-repeat: no-repeat;
+          background-size: 10%;
+          background-position: 0 13%;
+          color: $dark-color;
+          height: 200px;
+          margin-bottom: 20px;
+
+          img {
+            width: 15%;
+            height: 75%;
+            margin-right: 20px;
+            border-radius: 2px;
+          }
+
+          h3 {
+            margin: 0 0 10px 0;
+            width: 100%;
+            color: $dark-color;
+          }
+
+          h4 {
+            margin: 0 0 15px 0;
+            color: $main-color;
+            font-style: italic;
+
+            span {
+              margin-top: 10px;
+              display: block;
+              width: 8%;
+              height: 3px;
+              background-color: $light-color;
+            }
+          }
+
+          p {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

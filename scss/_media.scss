@@ -20,16 +20,6 @@
       width: 1120px;
     }
 
-    #logo {
-      display: flex;
-
-      a {
-        text-decoration: none;
-        outline: none;
-        border: none;
-      }
-    }
-
     .nav-menu {
       position: static;
       top: 0;
@@ -59,6 +49,16 @@
         }
       }
     }
+
+    #logo {
+      display: flex;
+
+      a {
+        text-decoration: none;
+        outline: none;
+        border: none;
+      }
+    }
   }
 
   // Header content for both index.html and about.html
@@ -85,13 +85,38 @@
     }
 
     &-about {
+      p {
+        text-align: center;
+      }
+
       #header-content {
-        h1,
-        p {
+        h1 {
           text-align: center;
         }
       }
     }
+  }
+
+  // Comedians
+
+  #comedians {
+    padding-bottom: 2.5rem;
+
+    .container {
+      .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .card {
+          flex-direction: row;
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  #about-main p {
+    margin-bottom: 45px;
   }
 
   //   Schedule for index.html
@@ -141,22 +166,6 @@
     }
   }
 
-  #comedians {
-    padding-bottom: 2.5rem;
-
-    .container {
-      .cards {
-        flex-direction: row;
-        flex-wrap: wrap;
-
-        .card {
-          flex-direction: row;
-          width: 50%;
-        }
-      }
-    }
-  }
-
   //   Thumbnails for about.html
   .thumbnails-container {
     display: flex;
@@ -176,10 +185,6 @@
         h2 {
           margin-bottom: 30px;
         }
-
-        p {
-          margin-bottom: 45px;
-        }
       }
     }
   }
@@ -191,3 +196,5 @@
     }
   }
 }
+
+// more specific ids
