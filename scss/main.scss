@@ -243,16 +243,23 @@ a {
 
 footer {
   width: 100%;
-  div {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    flex-wrap: wrap;
+  .main-section {
+    .container {
+      h2 {
+        margin-top: 1.8rem;
+      }
+      div {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        flex-wrap: wrap;
 
-    img {
-      width: 13%;
-      height: 5%;
+        img {
+          width: 13%;
+          height: 5%;
+        }
+      }
     }
   }
 
@@ -260,9 +267,10 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1.7rem;
 
     img {
-      width: 40%;
+      width: 27%;
       height: 30%;
     }
 

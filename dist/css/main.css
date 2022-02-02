@@ -288,21 +288,24 @@ a {
 
 footer {
   width: 100%; }
-  footer div {
+  footer .main-section .container h2 {
+    margin-top: 1.8rem; }
+  footer .main-section .container div {
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
     flex-wrap: wrap; }
-    footer div img {
+    footer .main-section .container div img {
       width: 13%;
       height: 5%; }
   footer #footer {
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 1.7rem; }
     footer #footer img {
-      width: 40%;
+      width: 27%;
       height: 30%; }
     footer #footer h2 {
       margin-bottom: 10px; }
@@ -329,7 +332,8 @@ footer {
     width: 100%;
     height: auto;
     background-color: #f3f3f3;
-    box-shadow: 0.5px 0.5px 5px #272a31; }
+    box-shadow: 0.5px 0.5px 5px #272a31;
+    z-index: 999; }
     #main-nav div.baga-icon-container {
       display: none; }
     #main-nav .container {
