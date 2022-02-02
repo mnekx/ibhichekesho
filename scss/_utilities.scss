@@ -6,7 +6,6 @@
 
 .baga-icon-container {
   height: 20px;
-
   display: flex;
   position: relative;
   margin: 1.5rem 0;
@@ -143,7 +142,7 @@
     transition: 3s cubic-bezier(0.2, 1, 0.3, 1);
   }
 
-  &:hover:before {
+  &:hover::before {
     transform: scale(2) translateX(-75%) translateY(-75%) rotate(28deg);
   }
 
@@ -158,7 +157,7 @@
   }
 
   &:hover hgroup {
-    transform: translatey(-100%);
+    transform: translateY(-100%);
     opacity: 0;
   }
 }
