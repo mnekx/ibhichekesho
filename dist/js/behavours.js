@@ -1,16 +1,11 @@
-const mainNav = document.querySelector('#main-nav');
-const bagaToggler = document.querySelector("#baga-toggler");
-const navMenu = document.querySelector(".nav-menu")
-// mainNav.addEventListener('click', (e)=>{
-// bagaToggler.checked = !bagaToggler.checked;
-// navMenu.classList.toggle('show-flex');
-// })
+const bagaToggler = document.querySelector('#baga-toggler');
+const navMenu = document.querySelector('.nav-menu');
 
-bagaToggler.addEventListener('input', (e)=>{
-    navMenu.classList.toggle('show-flex-nav');
-})
+bagaToggler.addEventListener('input', () => {
+  navMenu.classList.toggle('show-flex-nav');
+});
 
-navMenu.addEventListener('click', (e)=>{
-    navMenu.classList.remove('show-flex-nav');
-    bagaToggler.checked = false;
-})
+navMenu.addEventListener('click', () => {
+  navMenu.classList.remove('show-flex-nav');
+  bagaToggler.checked = false;
+});
