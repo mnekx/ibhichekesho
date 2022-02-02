@@ -62,3 +62,7 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
+
+## Video Take Through Link
+
+https://www.loom.com/share/64e4743f620540e69489c0e37b8f1f3e
