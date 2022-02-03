@@ -246,5 +246,10 @@ div#partner-images {
   }
 }
 
+// Schedule
+#schedule {
+  background-image: url('../images/schedule.png');
+}
+
 // Media Queries for widths above or equal 768px
 @import "media";
