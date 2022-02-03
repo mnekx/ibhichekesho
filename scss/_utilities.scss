@@ -292,7 +292,7 @@
   display: none;
   // display: flex;
   width: 100%;
-  background-color: rgba($dark-color, 0.7);
+  background-color: $dark-color;
   color: $light-color;
   height: 2rem;
   position: fixed;
