@@ -279,7 +279,7 @@
 .social-links-list {
   display: none;
   width: 100%;
-  background-color: rgba(39, 42, 49, 0.7);
+  background-color: #272a31;
   color: #d3d3d3;
   height: 2rem;
   position: fixed;
@@ -539,6 +539,10 @@ div#partner-images img {
 
 #about-main .main-section .container p {
   margin-bottom: 20px;
+}
+
+#schedule {
+  background-image: url("../images/schedule.png");
 }
 
 @media (min-width: 768px) {
