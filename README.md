@@ -64,5 +64,9 @@ Give a ⭐️ if you like this project!
 This project is [MIT](./MIT.md) licensed.
 
 ## Video Take Through Link
-
 https://www.loom.com/share/64e4743f620540e69489c0e37b8f1f3e
+
+
+## Aknowledgements
+
+Thanks to Cindy Shin who designed the UI. Check other designs on https://www.behance.net/adagio07 or checkour the linkedin profile [LinkedIn](linkedin.com/in/adagio07)
