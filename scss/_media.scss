@@ -1,0 +1,204 @@
+@media (min-width: 768px) {
+  // Social links
+  .social-links-list {
+    display: flex;
+  }
+  // header navigation
+  #main-nav {
+    flex-wrap: nowrap;
+    position: fixed;
+    top: 2rem;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: $almost-white;
+    box-shadow: 0.5px 0.5px 5px $dark-color;
+    z-index: 999;
+
+    div.baga-icon-container {
+      display: none;
+    }
+
+    .container {
+      justify-content: space-between;
+      width: 1120px;
+    }
+
+    .nav-menu {
+      position: static;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      flex: none;
+      background: none;
+      background-color: transparent;
+      justify-content: flex-end;
+      overflow-x: hidden;
+      flex-direction: row;
+
+      li {
+        margin: 0;
+
+        & > a {
+          display: inline-block;
+          height: 100%;
+          font-size: 1rem;
+          padding: 2rem 1.5rem 1.5rem;
+          transition: color 0.1s ease;
+
+          &:hover {
+            color: $main-color;
+          }
+        }
+      }
+    }
+
+    #logo {
+      display: flex;
+
+      a {
+        text-decoration: none;
+        outline: none;
+        border: none;
+      }
+    }
+  }
+
+  // Header content for both index.html and about.html
+  #header {
+    &-content {
+      max-width: 768px;
+      margin: 0 auto 0 auto;
+      padding-top: 6.5rem;
+      padding-bottom: 6rem;
+
+      h1 {
+        margin-top: 100px;
+        span#header-content-span1,
+        span#header-content-span2,
+        span#header-content-span3 {
+          display: inline-block;
+        }
+      }
+
+      p {
+        // text-align: center;
+        line-height: 1.5rem;
+      }
+    }
+
+    &-about {
+      p {
+        text-align: center;
+      }
+
+      #header-content {
+        h1 {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  // Comedians
+
+  #comedians {
+    padding-bottom: 2.5rem;
+
+    .container {
+      .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .card {
+          flex-direction: row;
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  #about-main p {
+    margin-bottom: 45px;
+  }
+
+  //   Schedule for index.html
+  #schedule {
+    padding: 2.5rem 1rem;
+
+    .container {
+      max-width: 1128px;
+
+      .cards {
+        flex-direction: row;
+        margin-bottom: 2rem;
+
+        .card {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-right: 0.2rem;
+          border: 1px solid transparent;
+
+          &:hover {
+            border: 1px solid $almost-white;
+            cursor: default;
+          }
+
+          & > p {
+            text-align: center;
+            width: 100%;
+            margin: 1.2rem 0;
+          }
+
+          h3 {
+            width: auto;
+            margin-top: 1.2rem;
+          }
+
+          i {
+            margin-top: 0.8rem;
+          }
+        }
+      }
+
+      h2 {
+        margin-bottom: 1.2rem;
+      }
+    }
+  }
+
+  //   Thumbnails for about.html
+  .thumbnails-container {
+    display: flex;
+    justify-content: space-between;
+
+    .thumbnail {
+      margin-right: 1rem;
+    }
+  }
+
+  // About section
+  #about-main {
+    margin-bottom: 3rem;
+
+    .main-section {
+      .container {
+        h2 {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  // The footer
+  footer {
+    .btn {
+      display: none;
+    }
+  }
+}
+
+// more specific ids

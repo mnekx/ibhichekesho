@@ -1,0 +1,256 @@
+@import "config";
+@import "utilities";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: $dark-color;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+
+  #footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.7rem;
+
+    img {
+      width: 27%;
+      height: 30%;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+#footer-partners-h2 {
+  margin-top: 1.8rem;
+}
+
+#footer-hgroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#load-less-btn,
+#load-more-btn {
+  width: 90%;
+  text-transform: uppercase;
+  border: 1px solid $dark-color;
+  margin-bottom: 1rem;
+
+  .footer-i {
+    color: $main-color;
+  }
+
+  &:hover {
+    background-color: white;
+    color: $dark-color;
+
+    .footer-i {
+      color: $dark-color;
+    }
+  }
+}
+
+#header {
+  &-home {
+    background-image: $showcase-image;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+  }
+
+  &-home::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    opacity: 0.9;
+    z-index: -999;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5.5rem;
+
+    h1 {
+      margin: 5px 0;
+      color: $main-color;
+      font-family: "COCOGOOSE", sans-serif;
+      
+
+      span {
+        display: block;
+        font-size: 38px;
+        font-weight: 900;
+        text-transform: uppercase;
+
+        &#header-content-span {
+          text-transform: none;
+          font-family: "Lato", sans-serif;
+        }
+      }
+    }
+
+    hgroup {
+      margin-bottom: 10px;
+
+      h2 {
+        font-weight: 900;
+        margin-bottom: 0.9rem;
+      }
+
+      h3 {
+        font-weight: lighter;
+      }
+    }
+
+    p {
+      margin: 25px 0;
+      padding: 10px;
+      border: 2px solid white;
+    }
+  }
+
+  &-about {
+    background-color: $almost-white;
+
+    p {
+      border: 1px solid $light-color;
+      background-color: white;
+    }
+
+    p:nth-of-type(2) {
+      border: none;
+      background-color: transparent;
+    }
+  }
+}
+
+// partner images
+div#partner-images {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  img {
+    width: 13%;
+    height: 5%;
+  }
+}
+
+#main-nav {
+  display: flex;
+  height: 20vh;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  // position: relative;
+
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  #logo {
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 70px;
+    }
+  }
+
+  .nav-menu {
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 3;
+    background: rgba($almost-white, 0.89);
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    transition: width 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    li {
+      margin: 1.5rem 0;
+    }
+
+    a {
+      display: inline-block;
+      width: 100%;
+      height: 30px;
+      font-size: 2rem;
+      color: $dark-color;
+    }
+  }
+}
+
+// About page
+#about-main {
+  .main-section {
+    border-top: 1px solid $light-color;
+    background-color: white;
+    color: $dark-color;
+    text-align: center;
+
+    .container {
+      h2 {
+        text-align: center;
+      }
+
+      span {
+        display: block;
+        margin: 10px auto;
+      }
+
+      p {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+// Schedule
+#schedule {
+  background-image: url("../images/schedule.png");
+}
+
+// Media Queries for widths above or equal 768px
+@import "media";
