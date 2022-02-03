@@ -40,9 +40,7 @@ const comediansCards = document.querySelector('#comedians-cards');
 let comediansNumbertoShow = 2;
 let nextStartIdx = 0;
 
-// Takes number of comedians to show, and where
-// to start in list and adds card ?
-// markup for each comedian in the list
+// Takes number of comedians to show, and where to start in list and adds card ?markup for each comedian in the list
 function showComedians(howMany = comedians.length, startFrom = 0) {
   for (let i = startFrom; i < howMany; i += 1) {
     const comedian = comedians[i];
