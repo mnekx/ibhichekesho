@@ -104,6 +104,7 @@ footer {
       margin: 5px 0;
       color: $main-color;
       font-family: "COCOGOOSE", sans-serif;
+      
 
       span {
         display: block;
@@ -248,7 +249,7 @@ div#partner-images {
 
 // Schedule
 #schedule {
-  background-image: url('../images/schedule.png');
+  background-image: url("../images/schedule.png");
 }
 
 // Media Queries for widths above or equal 768px
