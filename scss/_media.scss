@@ -1,9 +1,13 @@
 @media (min-width: 768px) {
+  // Social links
+  .social-links-list {
+    display: flex;
+  }
   // header navigation
   #main-nav {
     flex-wrap: nowrap;
     position: fixed;
-    top: 0;
+    top: 2rem;
     left: 0;
     width: 100%;
     height: auto;
